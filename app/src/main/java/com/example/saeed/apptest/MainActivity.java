@@ -13,8 +13,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.recyler)
-    RecyclerView recyclerView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +21,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-
-        MyRecyclearAdapter adapter=new MyRecyclearAdapter(getApplicationContext(), ProductFakeGenrator.getList());
-
-        recyclerView.setAdapter(adapter);
-           recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.HORIZONTAL,false));
 
 
 
